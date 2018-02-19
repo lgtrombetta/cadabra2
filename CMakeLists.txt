@@ -76,7 +76,7 @@ debug_message("Initial compiler flags: ${CMAKE_CXX_FLAGS}")
 
 # GCC
 if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O2 -Wall -Wno-unused-but-set-variable")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O2 -Wall -Wno-unused-but-set-variable -pthread")
 endif()
 
 # Clang
